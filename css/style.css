@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-bg-color: #121214;
+  --text-color: #e1e1e6;
+  --title-color: #04d361;
+  --form-color: #a8a8a8;
+  --bg-button-color: #8257e5;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  background: var(--body-bg-color);
+}
+
+.left-col {
+  padding: 50px 20px 0 30px;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.right-col {
+  display: none;
+  background-image: url(../assets/image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  margin-bottom: 5.6rem;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rocket-info h1 {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+.rocket-info p {
+  color: var(--text-color);
+}
+
+.rocket-info p:nth-child(even) {
+  font-weight: bold;
+}
+.register-info label {
+  grid-area: label;
+  color: var(--form-color);
+  margin-bottom: 20px;
+}
+
+.register-info input {
+  grid-area: input;
+  padding: 12px;
+  color: #6a6a6a;
+}
+
+.register-info input::placeholder {
+  color: #6a6a6a;
+  font-size: 12px;
+}
+
+.register-info button,
+.register-info input {
+  border: none;
+}
+
+.register-info button {
+  padding: 12px;
+  grid-area: button;
+  max-width: 48px;
+  background-color: var(--bg-button-color);
+}
+
+.register-info {
+  margin-block: 50px;
+  display: grid;
+  grid-template-areas:
+    'label label label label'
+    'input input input button';
+}
+
+.link-blog {
+  text-decoration: none;
+  color: var(--bg-button-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+}
+
+.link-blog span {
+  max-height: 24px;
+}
+
+@media only screen and (min-width: 950px) {
+  .right-col {
+    width: 60vw;
+    display: initial;
+  }
+
+  .register-info input {
+    width: 55vw;
+    position: absolute;
+  }
+
+  .register-info button {
+    position: absolute;
+    left: 55vw;
+    top: 385px;
+  }
+}
