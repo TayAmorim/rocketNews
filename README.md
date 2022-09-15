@@ -41,7 +41,7 @@ O layout da aplicação está disponível no Figma:
 </a>
 
 <p style="display: flex; align-items: flex-start; justify-content: left;">
-  <img alt="RocketNews" title="#RocketNews" src="../rocketNews/assets/capa.jpg" width="800px">
+  <img alt="RocketNews" title="#RocketNews" src="./assets/capa.jpg" width="800px">
 </p>
 
 ## 🎨 Guia de estilo
