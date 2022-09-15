@@ -262,11 +262,12 @@
           </svg>
         </span>
       </a>
+      <p id="msgAlerta"></p>
     </div>
     <div class="right-col">
     </div>
   </section>
-  <script src="./js/custom.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
